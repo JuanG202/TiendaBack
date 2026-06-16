@@ -19,10 +19,17 @@ const clienteSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+
+  telefono: {
+    type: String,
+    default: ""
+  },
+
   saldo: {
     type: Number,
     default: 0
   },
+
   historial: [historialSchema]
 });
 
